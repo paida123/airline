@@ -6,29 +6,77 @@
     <title>Digital Postcard</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+
+    <div class="queen">
+
+   
+    <header>
+        <nav>
+            <img src="img/logoai.png" alt="Company Logo" class="logo">
+            <ul class ="list">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="book.html">BOOK</a></li>
+                <li><a href="service.html">SERVICE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                
+                
+            </ul>
+        </nav>
+    </header>
+    <div class="birds"></div>
+    <div class="birds1"></div>
+    <div class="birds2"></div>
     <div class="sky">
         <div class="cloud"></div>
         <div class="cloud small"></div>
-        <div class="bird">
-            <img src="img/birds.png" class="bird" alt="Flying Bird">
+        <div class="cloud smaller"></div>
+        <div class="cloud smallest"></div>
+       
+    </div>
+
+    <div class="carousel">
+        <div class="carousel-images">
+            <div class="carousel-image">
+                <img src="img/card1.jpg"  alt="Card 1">
+            </div>
+            <div class="carousel-image">
+                <img src="img/card2.jpg"  alt="Card 2">
+            </div>
+            <div class="carousel-image">
+                <img src="img/card3.jpg"  alt="Card 3">
+            </div>
+            <div class="carousel-image">
+                <img src="img/card4.jpg"  alt="Card 4">
+            </div>
+            <div class="carousel-image">
+                <img src="img/card5.jpg"  alt="Card 5">
+            </div>
         </div>
     </div>
 
-    <div class="birds"></div>
-    <div class="bird">
-        <img src="img/birds.png" class="bird" alt="Flying Bird">
-    </div>
+</div>
 
-    <div class="postcard">
-        <div class="front">
-            <h2>Greetings from Auxilia!</h2>
-            <p>Hover to flip & reveal the message</p>
-        </div>
-        <div class="back">
-            <p>Wishing you a wonderful day! 🌍✈️</p>
-            <p>You are doing great!</p>
-        </div>
+    <div class="button-container">
+        <button class="button">Book with us</button>
     </div>
+    <div class="cards">
+        
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 airline@fly with us | All rights reserved.</p>
+    </footer>
+    <script>
+        // Select the burger menu and the list of navigation items
+        const burgerMenu = document.querySelector('.burger-menu');
+        const navList = document.querySelector('.list');
+    
+        // Add a click event to toggle the visibility of the navigation links
+        burgerMenu.addEventListener('click', () => {
+            navList.classList.toggle('nav-active');
+        });
+    </script>
 </body>
 </html>
