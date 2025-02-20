@@ -78,74 +78,68 @@ nav ul li a:hover {
 
 
 
-.burger-menu div {
-    width: 30px;
-    height: 3px;
-    background-color: black;
-    border-radius: 5px;
-}
 
-/* Media Query for Tablets (max-width: 768px) */
+
+
 @media screen and (max-width: 768px) {
+  
+   
     nav {
-        flex-direction: column;
-        align-items: flex-start; /* Align items to the left */
-        padding: 15px;
+       
     }
-
-    /* Adjust the navigation links layout for smaller screens */
+   
+    
     .list {
-        display: none; /* Hide the navigation links initially */
-        margin-left: 0;
-        justify-content: flex-start;
-        width: 100%;
+      margin-left: -30px;
+      gap:0;
+      width:100px;
     }
 
     nav ul {
-        display: block; /* Stack the links vertically */
-        width: 100%;
-        padding: 0;
+       
     }
 
     nav ul li {
-        margin-left: 0;
-        margin-top: 10px;
-        text-align: center;
-        width: 100%;
+    
     }
 
-    /* Logo Adjustments */
+    
     nav .logo {
         margin-bottom: 10px;
         width: 80px;
+        margin-left:-60px;
     }
 
-    /* Show the burger menu on mobile */
-    .burger-menu {
-        display: flex;
+    .services-section{
+        margin-top: 110vh;
+
+    }
+ 
+    .service-card{
+        height: 400px;
     }
 }
 
-/* Media Query for Mobile Devices (max-width: 480px) */
+
 @media screen and (max-width: 480px) {
     nav {
         padding: 5px;
     }
 
-    /* Adjust font size for links */
+    
     nav ul li a {
         font-size: 12px;
     }
 
-    /* Slightly smaller logo for mobile devices */
+   
     nav .logo {
         width: 60px;
     }
 }
 
-/* Show the navigation links when the burger menu is clicked */
+
 .nav-active {
-    display: block; /* Show the menu when active */
+    display: block; 
 }
 
 
@@ -286,7 +280,7 @@ nav ul li a:hover {
 .postcard:hover .back {
     transform: rotateY(360deg);
 }
-/* Carousel Styles */
+
 .carousel {
     width: 15%; 
     overflow: hidden;
@@ -306,38 +300,35 @@ nav ul li a:hover {
 }
 
 .carousel-image {
-    width: 100%; /* Full width for each image card */
+    width: 100%; 
     flex: 0 0 100%;
     display: flex;
-    /* justify-content: center; */
+    
     align-items: center;
-    /* border-radius: 80px; */
+    
    
     
 }
 
 .carousel-image  img {
-    width: 50%; /* Make image fill the container width */
-    height: 100%; /* Make image fill the container height */
+    width: 50%;
+    height: 100%; 
     width: 900px;
     height: 500px;  
     object-fit: scale-down;
-    /* border-radius: 80px; */
-   /* Ensure the entire image fits without cropping */
-    /* object-fit: scale-down;
-     border-radius: 80px; Round the corners to give it a card look */
+
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     transition: transform 0.3s ease-in-out;
     
 } 
 
-/* Hover Effect on Image */
+
 .carousel-image img:hover {
     transform: scale(1.05);
     
 }
 
-/* Keyframes for Carousel Animation */
+
 @keyframes slide {
     0% {
         transform: translateX(0);
@@ -360,7 +351,7 @@ nav ul li a:hover {
 }
 
 
-/* Headline */
+
 .headline {
     font-size: 32px;
     font-weight: bold;
@@ -372,7 +363,7 @@ nav ul li a:hover {
     color: #ccc;
 }
 
-/* Navigation Button */
+
 #nextBtn {
     position: absolute;
     right: -50px;
@@ -387,8 +378,8 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /* Stack items vertically */
-    margin-top: -350px; /* Adjust as needed for spacing */
+    flex-direction: column; 
+    margin-top: -350px; 
 }
 
 
@@ -438,34 +429,34 @@ footer {
 footer p {
     margin: 0;
 }
-/* Basic Styling for the Form */
+
 .form {
-    /* max-width: 800px; */
+   
     margin: 0 auto;
     padding: 20px;
     background-color: transparent;
     border-radius: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px black;
     width: 500px;
     z-index: 10;
     align-items: center;
 
 }
 
-/* Form Header */
+
 .form h2 {
     text-align: center;
     margin-bottom: 20px;
 }
 
-/* Form Labels */
+
 .form label {
     font-size: 16px;
     margin-bottom: 8px;
     display: block;
 }
 
-/* Form Inputs */
+
 .form input, .form select, .form button {
     width: 100%;
     padding: 10px;
@@ -486,7 +477,7 @@ footer p {
     box-sizing: border-box; 
 }
 
-/* Submit Button */
+
 .form button {
     background: linear-gradient(to bottom, #0077be, #87CEEB, #B0E0E6, #F0F8FF);
     color: white;
@@ -499,40 +490,57 @@ footer p {
     
 }
 
-/* Hover Effect for Button */
+
 .form button:hover {
     background-color: #45a049;
 }
 
-/* Responsiveness - For devices with a max width of 768px (tablets) */
+
 @media screen and (max-width: 768px) {
+   
+    .carousel {
+        width: 55%; 
+       height: 50%;
+       margin-left: 100px;
+     
+    }
+   
+   .button{
+    margin-left: 60px;
+    margin-top: 450px;
+    
+
+   }
+   .carousel-image{
+
+   }
     .form {
-        max-width: 90%; /* Allow the form to take up most of the screen */
+        max-width: 90%; 
         padding: 15px;
     }
 
     .form input, .form select, .form button {
-        font-size: 14px; /* Slightly smaller font size for smaller screens */
+        font-size: 14px; 
     }
 
     .form h2 {
-        font-size: 22px; /* Adjust header size for better visibility */
+        font-size: 22px; 
     }
 }
 
-/* Responsiveness - For devices with a max width of 480px (mobile phones) */
+
 @media screen and (max-width: 480px) {
     .form {
-        max-width: 95%; /* Further reduce width on smaller screens */
+        max-width: 95%;
         padding: 10px;
     }
 
     .form input, .form select, .form button {
-        font-size: 14px; /* Consistent font size for mobile */
+        font-size: 14px;
     }
 
     .form h2 {
-        font-size: 20px; /* Smaller header size for mobile screens */
+        font-size: 20px; 
     }
 }
 .icon {
@@ -551,7 +559,7 @@ footer p {
     height: 40px;
 }
 
-/* Service Page Styling */
+
 .services {
     max-width: 1200px;
     margin: 50px auto;
@@ -566,7 +574,7 @@ footer p {
     margin-bottom: 10px;
 }
 
-/* Service Card Styling */
+
 .service-card {
     background: linear-gradient(to bottom, #B0E0E6, #F0F8FF);
     border-radius: 8px;
@@ -603,7 +611,7 @@ footer p {
     color: #45a049;
 }
 
-/* Responsive Styling for Service Cards */
+
 .services {
     display: flex;
     flex-wrap: wrap;
@@ -615,9 +623,9 @@ footer p {
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Mobile Responsiveness */
+
 @media screen and (max-width: 1024px) {
-    /* For Tablets */
+    
     .services {
         flex-direction: row;
         justify-content: space-between;
@@ -630,7 +638,7 @@ footer p {
 }
 
 @media screen and (max-width: 768px) {
-    /* For Small Tablets and Portrait View */
+   
     .services {
         flex-direction: column;
         align-items: center;
@@ -679,7 +687,7 @@ footer p {
 }
 .contact-container {
     max-width: 1200px;
-    margin: 50px auto;
+   margin-top: 120px;
     padding: 20px;
     text-align: center;
 }
@@ -690,7 +698,7 @@ footer p {
     margin-bottom: 30px;
 }
 
-/* Contact Information Styling */
+
 .contact-info {
     display: flex;
     flex-wrap: wrap;
@@ -704,7 +712,7 @@ footer p {
     padding: 20px;
     width: 300px;
     margin: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px black;
 }
 
 .contact-item h3 {
@@ -719,12 +727,12 @@ footer p {
     margin-bottom: 10px;
 }
 
-/* Contact Form Styling */
+
 .contact-form {
     background-color: transparent;
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px black;
     width: 50%;
     margin: 0 auto;
 }
@@ -759,26 +767,26 @@ footer p {
     background-color: #005f8a;
 }
 
-/* Responsive Styling */
+
 @media screen and (max-width: 1024px) {
-    /* For Tablets */
+    
     .contact-info {
         flex-direction: row;
         justify-content: space-between;
     }
 
     .contact-item {
-        width: 45%; /* Adjust width to fit two items per row */
+        width: 45%; 
         margin: 10px;
     }
 
     .contact-form {
-        width: 60%; /* Adjust width to fit within the screen */
+        width: 60%; 
     }
 }
 
 @media screen and (max-width: 768px) {
-    /* For Small Tablets and Portrait View */
+   
     .contact-info {
         flex-direction: column;
         align-items: center;
@@ -816,7 +824,7 @@ footer p {
 }
 
 @media screen and (max-width: 480px) {
-    /* For Mobile Devices */
+    
     .contact-info {
         flex-direction: column;
         align-items: center;
